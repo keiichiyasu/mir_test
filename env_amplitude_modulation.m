@@ -12,7 +12,7 @@ t=[1:fs]/fs; %time, 1 [s]
 x=sin(2*pi*f*t);
 
 % envelope
-env=[zeros(1,fs/4) [1:fs/4]/(fs/4) ones(1,fs/4) wrev([1:fs/4]/(fs/4))];
+env=[zeros(1,fs/4) [1:fs/4]/(fs/4) ones(1,fs/4) fliplr([1:fs/4]/(fs/4))];
 figure;plot(env);
 
 % amplitude modulation
